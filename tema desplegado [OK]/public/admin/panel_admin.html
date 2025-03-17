@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <!-- ===============================================-->
+  <!--    Document Title-->
+  <!-- ===============================================-->
+  <title>Panel de edición secciones web - servicios profesionales</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- ===============================================-->
+  <!--    Favicons-->
+  <!-- ===============================================-->
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicons/favicon-16x16.png">
+  <link rel="shortcut icon" type="image/x-icon" href="../assets/img/favicons/favicon.ico">
+  <link rel="manifest" href="../assets/img/favicons/manifest.json">
+  <link rel="stylesheet" href="../fonts/icomoon/style.css">
+  <link rel="stylesheet" href="../fonts/flaticon/font/flaticon.css">
+  <meta name="msapplication-TileImage" content="assets/img/favicons/mstile-150x150.png">
+  <meta name="theme-color" content="#ffffff">
+
+
+  <!-- ===============================================-->
+  <!--    Stylesheets-->
+  <!-- ===============================================-->
+  <link href="../assets/css/theme.css" rel="stylesheet" />
+
+</head>
+
+
+<body>
+
+  <!-- ===============================================-->
+  <!--    Main Content-->
+  <!-- ===============================================-->
+  <main class="main" id="top">
+    <!-- MENU 
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" data-navbar-on-scroll="data-navbar-on-scroll">
+      <div class="container"><a class="navbar-brand" href="#"><img class="img-fluid" src="../assets/img/icons/logo.png"
+            alt="" /></a>
+        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto ms-lg-4 ms-xl-7 pt-2 pt-lg-0">
+            <li class="nav-item"><a class="nav-link fw-bold active" aria-current="page" href="#">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link fw-medium" href="#servicios">Servicios</a></li>
+            <li class="nav-item"><a class="nav-link fw-medium" href="#ubicacion">Ubicación</a></li>
+            <li class="nav-item"><a class="nav-link fw-medium" href="#agenda">Agenda</a></li>
+          </ul>
+          <form class="d-flex py-3 py-lg-0"><a class="btn btn-light rounded-pill shadow fw-bold" href="#contacto"
+              role="button">Contacto
+              <svg class="bi bi-arrow-right" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#9C69E2"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z">
+                </path>
+              </svg></a></form>
+        </div>
+      </div>
+    </nav>-->
+
+    <!-- logout -->
+
+  <!--barra top -->
+  <nav class="navbar navbar-expand-md fixed-top" id="navbar" data-navbar-soft-on-scroll="data-navbar-soft-on-scroll">
+    <div class="container-fluid px-0"><a>
+        <img class="navbar-brand d-md" style="width: 150px; height: auto; margin: 0;"
+          src="/admin/genda.png" alt="logo" /></a>
+      <!--LOGOUT-->
+      <form class="d-flex py-3 py-lg-0 ms-auto"><a class="btn btn-light rounded-pill shadow fw-bold" href="#" role="button"
+        data-bs-toggle="modal" data-bs-target="#modal-login" onclick="logout()">Cerrar sesión
+        <svg class="bi bi-arrow-right" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#9C69E2"
+          viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z">
+          </path>
+        </svg></a></form>
+    </div>
+  </nav>
+
+    <!-- TÍTULO PRINCIPAL -->
+    <div class="container contacto" id="contacto">
+      <div class="bg-img-2 overlay d-flex justify-content-center align-items-center">
+        <div class="intro text-center ">
+          <h1 class="mb-4 fw-bold pt-5">Panel de edición<br class="d-md-none d-xxl-block" /></h1>
+          <p>El siguiente panel de administración tiene la misma estructura que su sitio web original,
+            donde podrá editar cada una de las secciones editables. Para hacer cambios solo debe
+            escribir el nuevo contenido en la sección correspondiente y guardar los cambios,
+            los que se verán aplicados inmediatamente en su sitio web. <br>
+            Si tiene dudas o problemas, haga click en el botón de abajo para recibir ayuda.</p>
+          </p>
+          <p class="btn-wsp2"><a
+              href="https://api.whatsapp.com/send/?phone=56956250299&text=Necesito%20ayuda%20para%20editar%20mi%20web%20GENDA"
+              target="_blank" class="btn btn-wsp btn-primary">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-linecap="round" stroke-linejoin="round" width="32" height="32" stroke-width="2">
+                <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9"></path>
+                <path
+                  d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1">
+                </path>
+              </svg>
+            </a></p>
+        </div>
+      </div>
+    </div>
+
+    <!--LOGO-->
+    <div class="container text-center text-md-start mt-2">
+      <img id="imagen-logo" class="img-fluid d-block mx-auto mx-md-0" src="../assets/img/icons/logo.png" alt="logo"
+        width="10%" />
+      <div class="d-flex flex-column align-items-center mt-2">
+        <input type="file" id="image-upload-logo" class="content form-control mt-2" accept="image/*">
+      </div>
+      <button class="btn save-image btn-primary mt-1 border-0" id="save-logo" type="button" data-section="img-logo">
+        Cambiar logo
+      </button>
+    </div>
+
+
+    <!-- HERO -->
+    <section>
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- IMAGEN HERO -->
+          <div class="col-md-5 col-lg-7 order-md-1 text-center text-md-start">
+            <img id="imagen-hero" class="img-fluid" src="../assets/img/illustrations/hero-header.png" alt="" />
+            <div class="d-flex flex-column align-items-center mt-2">
+              <input type="file" id="image-upload-hero" class="content form-control mt-2" accept="image/*">
+            </div>
+            <button class="btn save-image btn-primary mt-1 border-0" id="save-imagen-hero" type="button"
+              data-section="img-hero">Guardar Imagen</button>
+          </div>
+
+          <!--TITULO HERO-->
+          <div class="col-md-7 col-lg-5 text-center text-md-start">
+            <h2 id="titulo-hero" class="fw-bold">Título principal <br class="d-block d-lg-none d-xl-block " /></h2>
+            <div class="mb-3">
+              <textarea id="titulo-hero-textarea" class="content form-control mb-1 mx-auto" rows="1"
+                placeholder="Escribe el nuevo título aquí..."></textarea>
+              <button class="save-btn1 btn btn-primary border-0" data-section="titulo-hero">Guardar Título</button>
+            </div>
+            <!-- TEXTO HERO -->
+            <p id="texto-hero" class="mt-3 mb-0">Texto introductorio:</p>
+            <div class="mb-3">
+              <textarea id="texto-hero-textarea" class="content form-control mb-1 mx-auto" rows="2"
+                placeholder="Escribe el nuevo texto aquí..."></textarea>
+              <button class="save-btn2 btn btn-primary border-0 " data-section="texto-hero">Guardar Texto</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MAS INFO -->
+    <section class="py-3" id="mas-info">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="card mb-3 bg-soft-danger rounded-3">
+              <div class="row g-0 align-items-center">
+                <div class="col-md-5 col-lg-6 text-md-center text-center">
+                  <img id="imagen-mas-info" class="img-fluid" src="../assets/img/illustrations/about.png" alt="" />
+                  <input type="file" id="image-upload-info" class="content form-control mt-2 ms-3" accept="image/*">
+                  <button class="btn save-image btn-primary mt-1 border-0" id="save-imagen-info" type="button"
+                    data-section="img-mas-info">Guardar Imagen</button>
+                </div>
+
+                <div class="col-md-7 col-lg-6 px-md-2 px-xl-6 text-center text-md-start">
+
+                  <!--TITULO MAS INFO-->
+                  <div class=" text-center text-md-start mt-3">
+                    <h2 id="titulo-seccion1" class="fw-bold">Título sección <br class="d-block d-lg-none d-xl-block" />
+                    </h2>
+                    <div class="mb-3">
+                      <textarea id="titulo-seccion1-textarea" class="content form-control mb-1 mx-auto" rows="1"
+                        placeholder="Escribe el nuevo título aquí..."></textarea>
+                      <button class="save-btn3 btn btn-primary border-0" data-section="titulo-seccion1">Guardar
+                        Título</button>
+                    </div>
+                    <!-- TEXTO MAS INFO -->
+                    <p id="texto-seccion1" class="mt-3 mb-0">Texto sección:</p>
+                    <div class="mb-3">
+                      <textarea id="texto-seccion1-textarea" class="content form-control mb-1 mx-auto" rows="2"
+                        placeholder="Escribe el nuevo texto aquí..."></textarea>
+                      <button class="save-btn4 btn btn-primary border-0" data-section="texto-seccion1">Guardar
+                        Texto</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--selector seccion
+    <div id="selector-seccion1">
+      <label>
+        <input type="radio" name="estadoSeccion1" value="activada"> Activada
+      </label>
+      <label>
+        <input type="radio" name="estadoSeccion1" value="desactivada"> Desactivada
+      </label>
+    </div>-->
+
+
+
+    <!-- SERVICIOS -->
+    <section class="py-6">
+      <div class="container-lg" id="servicios">
+        <div class="row flex-center">
+          <div class="col-auto text-center my-4">
+            <h1 id="titulo-servicios" class="fw-bold">Título sección "Servicios" <br
+                class="d-block d-lg-none d-xl-block" /></h2>
+              <!--TITULO SERVICIOS-->
+              <div class="mb-3">
+                <textarea id="titulo-servicios-textarea" class="content form-control mb-1 mx-auto" rows="1"
+                  placeholder="Escribe el nuevo título aquí..."></textarea>
+                <button class="save-btn5 btn btn-primary border-0" data-section="titulo-servicios">Guardar
+                  Título</button>
+              </div>
+              <!--TEXTO SERVICIOS-->
+              <p id="texto-servicios" class="mt-3 mb-0">Texto sección.</p>
+              <div class="mb-3">
+                <textarea id="texto-servicios-textarea" class="content form-control mb-1 mx-auto" rows="2"
+                  placeholder="Escribe el nuevo texto aquí..."></textarea>
+                <button class="save-btn6 btn btn-primary border-0" data-section="texto-servicios">Guardar
+                  Texto</button>
+              </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 mb-4">
+              <div class="card px-5 px-md-3 py-lg-5">
+                <div class="row flex-center">
+                  <div class="bg-holder z-index-1 d-none d-lg-block"
+                    style="background-image:url(../assets/img/illustrations/feature-bg-1.png);background-position:center;background-size:contain;">
+                  </div>
+                  <!--/.bg-holder-->
+
+                  <div class="bg-holder z-index-1 d-block d-lg-none"
+                    style="background-image:url(../assets/img/illustrations/feature-bg-1.png);background-position:center;background-size:cover;">
+                  </div>
+                  <!--/.bg-holder-->
+
+                  <div class="col-md-4 pe-0 pe-md-0 text-center"><img class="img-fluid" id="imagen-servicios1"
+                      src="../assets/img/illustrations/feature-search.png" alt="" /></div>
+                  <div class="col-md-8 ps-md-3 pe-md-2 text-center text-md-start z-index-2">
+                    <div class="card-body px-0">
+                      <!--TITULO SERVICIO #1-->
+                      <h4 class="card-title pt-md-5">Título servicio #1</h4>
+                      <div class="mb-3">
+                        <textarea id="titulo-servicios1-textarea" class="content form-control mb-1 mx-auto" rows="1"
+                          placeholder="Escribe el nuevo título aquí..."></textarea>
+                        <button class="save-btn7 btn btn-primary border-0" data-section="titulo-servicios1">Guardar
+                          Título</button>
+                        <p id="texto-servicios1" class="mt-3 mb-0">Texto servicio #1.</p>
+                        <!--TEXTO SERVICIO #1-->
+                        <textarea id="texto-servicios1-textarea" class="content form-control mb-1 mx-auto" rows="2"
+                          placeholder="Escribe el nuevo texto aquí..."></textarea>
+                        <button class="save-btn8 btn btn-primary border-0" data-section="texto-servicios1">Guardar
+                          Texto</button>
+                      </div>
+                    </div>
+                  </div>
+                  <input type="file" id="image-serv1" class="content form-control mt-2 ms-3" accept="image/*">
+                </div>
+                <div>
+                  <button class="btn save-image btn-primary mt-1 border-0" id="save-serv1" type="button"
+                    data-section="img-serv1">Guardar Imagen</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+              <div class="card px-5 px-md-3 py-lg-5">
+                <div class="row flex-center">
+                  <div class="bg-holder z-index-1 d-none d-lg-block"
+                    style="background-image:url(../assets/img/illustrations/feature-bg-2.png);background-position:center;background-size:contain;">
+                  </div>
+                  <!--/.bg-holder-->
+
+                  <div class="bg-holder z-index-1 d-block d-lg-none"
+                    style="background-image:url(../assets/img/illustrations/feature-bg-2.png);background-position:center;background-size:cover;">
+                  </div>
+                  <!--/.bg-holder-->
+
+                  <div class="col-md-4 pe-0 pe-md-0 text-center"><img class="img-fluid" id="imagen-servicios2"
+                      src="../assets/img/illustrations/feature-hour.png" alt="" /></div>
+                  <div class="col-md-8 ps-md-3 pe-md-2 text-center text-md-start z-index-2">
+                    <div class="card-body px-0">
+                      <!--TITULO SERVICIO #2-->
+                      <h4 class="card-title pt-md-5">Título servicio #2</h4>
+                      <div class="mb-3">
+                        <textarea id="titulo-servicios2-textarea" class="content form-control mb-1 mx-auto" rows="1"
+                          placeholder="Escribe el nuevo título aquí..."></textarea>
+                        <button class="save-btn9 btn btn-primary border-0" data-section="titulo-servicios2">Guardar
+                          Título</button>
+                        <p id="texto-servicios2" class="mt-3 mb-0">Texto servicio #2.</p>
+                        <!--TEXTO SERVICIO #2-->
+                        <textarea id="texto-servicios2-textarea" class="content form-control mb-1 mx-auto" rows="2"
+                          placeholder="Escribe el nuevo texto aquí..."></textarea>
+                        <button class="save-btn10 btn btn-primary border-0" data-section="texto-servicios2">Guardar
+                          Texto</button>
+                      </div>
+                    </div>
+                  </div>
+                  <input type="file" id="image-serv2" class="content form-control mt-2 ms-3" accept="image/*">
+                </div>
+                <div>
+                  <button class="btn save-image btn-primary mt-1 border-0" id="save-serv2" type="button"
+                    data-section="img-serv2">Guardar Imagen</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+              <div class="card px-5 px-md-3 py-lg-5">
+                <div class="row flex-center">
+                  <div class="bg-holder z-index-1 d-none d-lg-block"
+                    style="background-image:url(../assets/img/illustrations/feature-bg-3.png);background-position:center;background-size:contain;">
+                  </div>
+                  <!--/.bg-holder-->
+
+                  <div class="bg-holder z-index-1 d-block d-lg-none"
+                    style="background-image:url(../assets/img/illustrations/feature-bg-3.png);background-position:center;background-size:cover;">
+                  </div>
+                  <!--/.bg-holder-->
+
+                  <div class="col-md-4 pe-0 pe-md-0 text-center"><img class="img-fluid" id="imagen-servicios3"
+                      src="../assets/img/illustrations/feature-print.png" alt="" /></div>
+                  <div class="col-md-8 ps-md-3 pe-md-2 text-center text-md-start z-index-2">
+                    <!--TITULO SERVICIO #3-->
+                    <h4 class="card-title pt-md-5">Título servicio #3</h4>
+                    <div class="mb-3">
+                      <textarea id="titulo-servicios3-textarea" class="content form-control mb-1 mx-auto" rows="1"
+                        placeholder="Escribe el nuevo título aquí..."></textarea>
+                      <button class="save-btn11 btn btn-primary border-0" data-section="titulo-servicios3">Guardar
+                        Título</button>
+                      <p id="texto-servicios3" class="mt-3 mb-0">Texto servicio #3.</p>
+                      <!--TEXTO SERVICIO #3-->
+                      <textarea id="texto-servicios3-textarea" class="content form-control mb-1 mx-auto" rows="2"
+                        placeholder="Escribe el nuevo texto aquí..."></textarea>
+                      <button class="save-btn12 btn btn-primary border-0" data-section="texto-servicios3">Guardar
+                        Texto</button>
+                    </div>
+                  </div>
+                </div>
+                <input type="file" id="image-serv3" class="content form-control mt-2 ms-3" accept="image/*">
+              <div>
+                <button class="btn save-image btn-primary mt-1 border-0" id="save-serv3" type="button"
+                  data-section="img-serv3">Guardar Imagen</button>
+              </div>
+            </div>
+            </div>
+
+
+            <div class="col-md-6 mb-4">
+              <div class="card px-5 px-md-3 py-lg-5">
+                <div class="row flex-center">
+                  <div class="bg-holder z-index-1 d-none d-lg-block"
+                    style="background-image:url(../assets/img/illustrations/feature-bg-4.png);background-position:center;background-size:contain;">
+                  </div>
+                  <!--/.bg-holder-->
+
+                  <div class="bg-holder z-index-1 d-block d-lg-none"
+                    style="background-image:url(../assets/img/illustrations/feature-bg-4.png);background-position:center;background-size:cover;">
+                  </div>
+                  <!--/.bg-holder-->
+
+                  <div class="col-md-4 pe-0 pe-md-0 text-center"><img class="img-fluid" id="imagen-servicios4"
+                      src="../assets/img/illustrations/feature-security.png" alt="" /></div>
+                  <div class="col-md-8 ps-md-3 pe-md-2 text-center text-md-start z-index-2">
+                    <!--TITULO SERVICIO #4-->
+                    <h4 class="card-title pt-md-5">Título servicio #4</h4>
+                    <div class="mb-3">
+                      <textarea id="titulo-servicios4-textarea" class="content form-control mb-1 mx-auto" rows="1"
+                        placeholder="Escribe el nuevo título aquí..."></textarea>
+                      <button class="save-btn13 btn btn-primary border-0" data-section="titulo-servicios4">Guardar
+                        Título</button>
+                      <p id="texto-servicios4" class="mt-3 mb-0">Texto servicio #4.</p>
+                      <!--TEXTO SERVICIO #3-->
+                      <textarea id="texto-servicios4-textarea" class="content form-control mb-1 mx-auto" rows="2"
+                        placeholder="Escribe el nuevo texto aquí..."></textarea>
+                      <button class="save-btn14 btn btn-primary border-0" data-section="texto-servicios4">Guardar
+                        Texto</button>
+                    </div>
+                  </div>
+                </div>
+                <input type="file" id="image-serv4" class="content form-control mt-2 ms-3" accept="image/*">
+              <div>
+                <button class="btn save-image btn-primary mt-1 border-0" id="save-serv4" type="button"
+                  data-section="img-serv4">Guardar Imagen</button>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- UBICACIÓN -->
+    <section class="py-6 pb-0">
+      <div class="section" id="ubicacion">
+        <div class="container-lg ubicacion text-center">
+          <div class="row flex-center mb-1">
+            <div class="col-auto text-center" data-aos="fade-up" data-aos-delay="">
+              <h1 class="fw-bold mb-1">¿Dónde estamos? </h1>
+              <p>Mira el siguiente tutorial para aprender a obtener tu link de Maps. Haz click <a href="#"
+                  data-bs-toggle="modal" data-bs-target="#tutorial-maps">AQUÍ</a></p>
+              <p class="heading">Pega el link de tu ubicación de Maps aquí:</p>
+            </div>
+
+            <!--MODAL TUTORIAL MAPS-->
+            <div class="modal fade" id="tutorial-maps" tabindex="-1">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">Tutorial</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="ratio ratio-16x9">
+                      <video controls controlsList="nodownload" oncontextmenu="return false;"
+                        style="width: 100%; height: 100%;">
+                        <source src="../assets/video/Tutorial_MAPS.mp4" type="video/mp4">
+                        Tu navegador no soporta la etiqueta de video.
+                      </video>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-auto text-center">
+              <textarea id="link-maps-textarea" class="content form-control mb-1 mx-auto" rows="1" style="width: 500px;"
+                placeholder="Pega el link aquí..."></textarea>
+            </div>
+          </div>
+
+          <button class="save-btn15 btn btn-primary border-0 mb-3" data-section="link-maps">Guardar
+            ubicación</button>
+
+          <p>Aquí verás inmediatamente la ubicación del link ingresado. Verifica si la ubicación es correcta.</p>
+
+          <div class="map-section" style="width: 100%; height: 400px; margin-top: 20px;">
+            <iframe class="mapa" id="mapa" src="" width="100%" height="100%" style="border:0;" allowfullscreen=""
+              loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Agenda -->
+    <section class="py-6 pb-0">
+      <div class="section agenda" id="agenda">
+        <div class="container-lg">
+          <div class="row flex-center">
+            <div class="col-auto text-center" data-aos="fade-up" data-aos-delay="">
+              <h1 class="fw-bold">Agenda </h1>
+              <p>Mira el siguiente tutorial para crear tu propia agenda en Calendly. Haz click <a href="#"
+                  data-bs-toggle="modal" data-bs-target="#tutorial-calendly">AQUÍ</a></p>
+              <p class="heading">Inserta el link de tu agenda aquí:</p>
+              <div class="col-auto text-center">
+                <textarea id="link-calendly-textarea" class="content form-control mt-1 mb-1 mx-auto" rows="1"
+                  style="width: 500px;" placeholder="Pega el link aquí..."></textarea>
+                <button class="save-btn16 btn btn-primary border-0  mt-1 mb-1" data-section="link-calendly">Guardar
+                  agenda</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--MODAL TUTORIAL CALENDLY-->
+        <div class="modal fade" id="tutorial-calendly" tabindex="-1">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Tutorial</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="ratio ratio-16x9">
+                  <video controls controlsList="nodownload" oncontextmenu="return false;"
+                    style="width: 100%; height: 100%;">
+                    <source src="../assets/video/Tutorial_Calendly.mp4" type="video/mp4">
+                    Tu navegador no soporta la etiqueta de video.
+                  </video>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Principio del widget integrado de Calendly -->
+        <div class="agenda-section" id="agenda-section">
+
+
+        </div>
+      </div>
+    </section>
+
+    <!--HABLEMOS-->
+    <div class="container-fluid contacto" id="contacto">
+      <div class="bg-img-2 overlay d-flex justify-content-center align-items-center">
+        <div class="intro text-center px-3">
+          <h2>Hablemos!</h2>
+          <div>
+            <p>Ingresa tu número de Whatsapp para actualizar el botón de contacto:</p>
+            <p><em>Escribe solo el número telefónico, por ejemplo: 91234567</em></p>
+          </div>
+          <div class="col-12 col-md-auto text-center">
+            <textarea id="num-wsp" class="content form-control mt-3 mx-auto mb-1 w-100" rows="1"
+              placeholder="+569"></textarea>
+          </div>
+          <button class="btn btn-primary border-0 mb-3 update-wsp" data-section="wsp">Actualizar N° contacto</button>
+          <p>Prueba el botón:</p>
+          <p class="btn-wsp2">
+            <a id="wsp-link" href="" target="_blank" class="btn btn-wsp btn-primary">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-linecap="round" stroke-linejoin="round" width="32" height="32" stroke-width="2">
+                <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9"></path>
+                <path
+                  d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1">
+                </path>
+              </svg>
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Footer -->
+    <div class="site-footer">
+      <div class="container">
+        <div class="row">
+          <!-- Sección "sobre nosotros"
+          <div class="col-lg-4">
+            <div class="widget">
+              <h5>Sobre nosotros</h5>
+              <p class="heading">Far far away, behind the word mountains, far from the countries Vokalia and
+                Consonantia,
+                there live the blind texts.</p>
+            </div>
+          </div> -->
+
+          <div class="col-lg-2">
+            <div class="widget">
+              <h5>Navegación</h5>
+              <ul class="list-unstyled float-left links">
+                <li class="nav-item"><a class="nav-link fw-medium" href="#services-section">Servicios</a></li>
+                <li class="nav-item"><a class="nav-link fw-medium" href="#ubicacion">Ubicación</a></li>
+                <li class="nav-item"><a class="nav-link fw-medium" href="#agenda">Agenda</a></li>
+                <li class="nav-item"><a class="nav-link fw-medium" href="#contacto">Contacto</a></li>
+              </ul>
+            </div> <!-- /.widget -->
+          </div> <!-- NAVEGACION /.col-lg-3 -->
+
+          <!--CONTACTO-->
+          <div class="col-lg-3">
+            <div class="widget">
+              <h5>Contacto</h5>
+              <!--textarea direccion-->
+              <textarea id="direccion-textarea" class="content form-control mt-3 mb-1" rows="1"
+                placeholder="Ingresa tu dirección"></textarea>
+              <button class="btn btn-primary border-0 mb-3 btn-direccion" data-section="direccion">Guardar</button>
+
+              <p class="telefono mb-0" id="telefono">Cargando contenido...</p>
+              <p class="lh-1"><em>El número de teléfono se actualiza automáticamente desde los datos de contacto de
+                  Whatsapp</em></p>
+
+              <!--textarea mail-->
+              <textarea id="mail-textarea" class="content form-control mt-3 mb-1" rows="1"
+                placeholder="Ingresa tu mail"></textarea>
+              <button class="btn btn-primary border-0 mb-3 btn-mail" data-section="mail">Guardar</button>
+            </div>
+          </div> <!-- /.widget -->
+
+          <div class="col-lg-3">
+            <div class="widget">
+              <h5>Encuéntranos aquí</h5>
+              <textarea id="insta-textarea" class="content form-control mt-3 mb-1" rows="1"
+                placeholder="Link de tu Instagram"></textarea>
+              <button class="btn btn-primary border-0 mb-3 btn-insta" data-section="link-insta">Guardar</button>
+
+              <textarea id="face-textarea" class="content form-control mt-3 mb-1" rows="1"
+                placeholder="Link de tu Facebook"></textarea>
+              <button class="btn btn-primary border-0 mb-3 btn-face" data-section="link-face">Guardar</button>
+
+              <p>Prueba los botones de redes sociales:</p>
+              <ul class="list-unstyled social">
+                <li><a id="insta" href="#" target="_blank"><span class="icon-instagram"></span></a></li>
+                <li><a id="face" href="#" target="_blank"><span class="icon-facebook"></span></a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- /.row -->
+
+          <div class="row mt-5">
+            <div class="col-12 text-center">
+              <p>Panel de edición web
+                <script>document.write(new Date().getFullYear());</script> &mdash;
+                Diseñado por <a href="http://www.genda.cl" target="_blank">genda.cl</a>
+              </p>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- ===============================================-->
+  <!--    JavaScripts-->
+  <!-- ===============================================-->
+  <script src="../vendors/@popperjs/popper.min.js"></script>
+  <script src="../vendors/bootstrap/bootstrap.min.js"></script>
+  <script src="../vendors/is/is.min.js"></script>
+  <!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>-->
+  <script src="../assets/js/theme.js"></script>
+  <script src="/admin/script_admin.js"></script>
+
+
+  <!-- MUESTRA LA PREV DEL MAPA  -->
+  <script>
+    $(document).ready(function () {
+      $.getJSON('https://test.genda.cl/content/link-maps.json', function (data) {
+        $('#mapa').attr('src', data.content);
+      }).fail(function () {
+        $('#mapa').val('No se pudo cargar el contenido.');
+      });
+    });
+  </script>
+
+  <!--ACTUALIZA EL WSP-->
+  <script>
+    $(document).ready(function () {
+      const whatsappLink = `https://api.whatsapp.com/send/?phone=569`;
+
+      $.getJSON('https://test.genda.cl/content/wsp.json', function (data) {
+        $('#wsp-link').attr('href', whatsappLink + data.content);
+        $('#telefono').text(data.content);
+      }).fail(function () {
+        $('#wsp-link').val('No se pudo cargar el contenido.');
+      });
+    });
+  </script>
+
+  <!--Actualiza el calendly-->
+  <script>
+    $(document).ready(function () {
+      $.getJSON('https://test.genda.cl/content/link-calendly.json', function (data) {
+        $('#agenda-section').html(data.content);
+      }).fail(function () {
+        $('#agenda-section').val('No se pudo cargar el contenido.');
+      });
+    });
+  </script>
+
+  <!--Actualiza el insta-->
+  <script>
+$(document).ready(function () {
+    
+    $.getJSON('https://test.genda.cl/content/link-insta.json', function (data) {
+        $('#insta').attr('href', data.content);
+    }).fail(function () {
+        $('#insta').val('No se pudo cargar el contenido.');
+    });
+});
+  </script>
+
+  <!--Actualiza el face-->
+  <script>
+$(document).ready(function () {
+  
+    $.getJSON('https://test.genda.cl/content/link-face.json', function (data) {
+        $('#face').attr('href', data.content);
+    }).fail(function () {
+        $('#face').val('No se pudo cargar el contenido.');
+    });
+});
+  </script>
+
+  <!--Detiene la reproducción del tutorial de Calendly cuando se cierra el modal-->
+  <script>
+    $('#tutorial-calendly').on('hidden.bs.modal', function () {
+      var video = $(this).find('video')[0];
+      if (video) {
+        video.pause();
+        video.currentTime = 0; // Reinicia el video, opcional
+      }
+    });
+  </script>
+
+  <!--Detiene la reproducción del tutorial de Maps cuando se cierra el modal-->
+  <script>
+    $('#tutorial-maps').on('hidden.bs.modal', function () {
+      var video = $(this).find('video')[0];
+      if (video) {
+        video.pause();
+        video.currentTime = 0; // Reinicia el video, opcional
+      }
+    });
+  </script>
+
+  <!--Actualiza img HERO-->
+  <script>
+    $(document).ready(function () {
+      $.getJSON('https://test.genda.cl/content/imagen-hero.json', function (data) {
+        $('#imagen-hero').attr('src', '../' + data.content);
+      }).fail(function () {
+        $('#imagen-hero').val('No se pudo cargar el contenido.');
+      });
+    });
+  </script>
+
+  <!--Actualiza img LOGO-->
+  <script>
+    $(document).ready(function () {
+      $.getJSON('https://test.genda.cl/content/imagen-logo.json', function (data) {
+        $('#imagen-logo').attr('src', '../' + data.content);
+      }).fail(function () {
+        $('#imagen-logo').val('No se pudo cargar el contenido.');
+      });
+    });
+  </script>
+
+
+  <!--Actualiza img mas info-->
+  <script>
+    $(document).ready(function () {
+      $.getJSON('https://test.genda.cl/content/imagen-mas-info.json', function (data) {
+        $('#imagen-mas-info').attr('src', '../' + data.content);
+      }).fail(function () {
+        $('#imagen-mas-info').val('No se pudo cargar el contenido.');
+      });
+    });
+  </script>
+
+ <!--Actualiza img serv1-->
+ <script>
+  $(document).ready(function () {
+    $.getJSON('https://test.genda.cl/content/imagen-serv1.json', function (data) {
+      $('#imagen-servicios1').attr('src', '../' + data.content);
+    }).fail(function () {
+      $('#imagen-servicios1').val('No se pudo cargar el contenido.');
+    });
+  });
+</script>
+
+ <!--Actualiza img serv2-->
+ <script>
+  $(document).ready(function () {
+    $.getJSON('https://test.genda.cl/content/imagen-serv2.json', function (data) {
+      $('#imagen-servicios2').attr('src', '../' + data.content);
+    }).fail(function () {
+      $('#imagen-servicios2').val('No se pudo cargar el contenido.');
+    });
+  });
+</script>
+
+
+ <!--Actualiza img serv3-->
+ <script>
+  $(document).ready(function () {
+    $.getJSON('https://test.genda.cl/content/imagen-serv3.json', function (data) {
+      $('#imagen-servicios3').attr('src', '../' + data.content);
+    }).fail(function () {
+      $('#imagen-servicios3').val('No se pudo cargar el contenido.');
+    });
+  });
+</script>
+
+ <!--Actualiza img serv4-->
+ <script>
+  $(document).ready(function () {
+    $.getJSON('https://test.genda.cl/content/imagen-serv4.json', function (data) {
+      $('#imagen-servicios4').attr('src', '../' + data.content);
+    }).fail(function () {
+      $('#imagen-servicios4').val('No se pudo cargar el contenido.');
+    });
+  });
+</script>
+
+  <!-- Subir imagen HERO 
+<script>
+  $(document).ready(function () {
+    $('#save-image').click(function (event) {
+      event.preventDefault(); // Evita que el botón provoque un submit
+      let file = $('#image-upload')[0].files[0];
+      if (!file) {
+        alert("Selecciona una imagen primero.");
+        return;
+      }
+
+      let formData = new FormData();
+      formData.append('image', file);
+
+      $.ajax({
+        url: 'http://localhost:3000/upload-image',
+        method: 'POST',
+        data: formData,
+        processData: false,
+        contentType: false,
+        success: function (response) {
+          console.log("Ruta de imagen devuelta:", response.imageUrl);
+
+          // Usar la URL devuelta directamente sin modificarla
+          let nuevaRuta = response.imageUrl + '?t=' + new Date().getTime();
+          $('#imagen-hero').attr('src', nuevaRuta);
+          $('#texto').text("Imagen actualizada");
+          console.log("nueva ruta: ", nuevaRuta);
+          alert("Imagen actualizada correctamente.");
+        },
+        error: function () {
+          alert("Error al subir la imagen.");
+        }
+      });
+    });
+  });
+</script>-->
+
+
+
+  <!--SCRIPT PARA ACTIVAR/DESACTIVAS SECCIONES
+<script>
+  $(document).ready(function () {
+    // Al cargar, se recupera la opción guardada (usando la misma clave)
+    var estadoGuardado = localStorage.getItem('estadoSeccion_mas-info');
+    if (estadoGuardado) {
+      $('input[name="estadoSeccion1"][value="' + estadoGuardado + '"]').prop('checked', true);
+      if (estadoGuardado === 'desactivada') {
+        $('#mas-info').addClass('desactivada');
+      } else {
+        $('#mas-info').removeClass('desactivada');
+      }
+    } else {
+      // Por defecto, activada.
+      $('input[name="estadoSeccion1"][value="activada"]').prop('checked', true);
+      $('#mas-info').removeClass('desactivada');
+    }
+
+    // Al cambiar la opción, se guarda la preferencia y se actualiza la sección.
+    $('input[name="estadoSeccion1"]').change(function () {
+      var nuevoEstado = $(this).val();
+      localStorage.setItem('estadoSeccion_mas-info', nuevoEstado);
+      
+      if (nuevoEstado === 'desactivada') {
+        $('#mas-info').addClass('desactivada');
+      } else {
+        $('#mas-info').removeClass('desactivada');
+      }
+    });
+  });
+</script>-->
+
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,700;1,900&amp;display=swap"
+    rel="stylesheet">
+</body>
+
+</html>
